@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>iDESWEB</h1>
+
+    <H2>Formulario de registro</H2>
+
+<form >
+    <fieldset>
+        <legend>¿QUIEN ERES?</legend><br>
+        <label for="nombre">Nombre</label> <br>
+        <input type="text" id="nombre" name="nombre"/> <br>
+        <label for="apellido">Apellidos</label> <br>
+        <input type="text" id="apellido" name="apellido"/> <br> <br>
+        <label for="correo">Correo electronico</label> <br>
+        <input type="email" id="correo" name="correo"/> <br> <br>
+        <label for="fecha">Fecha de nacimiento</label> <br>
+        <input type="date" id="fecha" name="fecha"/> <br> <br>
+    </fieldset>
+</form>
+<form >
+    <fieldset>
+        <legend>¿DE DONDE ERES?</legend><br>
+        <label for="ciudad">Ciudad</label> <br>
+        <input type="text" id="ciudad" name="ciudad"/><br><br>
+        <label for="codigo">Código postal</label> <br>
+        <input type="number" id="codigo" name="codigo"/> <br> <br>
+        <!-- <label for="pais">Pais</label> <br>
+        <input type="text" id="pais" name="pais"/> <br> <br> -->
+        <label for="pais">Pais</label> <br>
+        <select id="pais" name="pais">
+            <option value="México">México</option>
+            <option value="U.S.A.">U.S.A.</option>
+            <option value="Canada">Canada</option>
+            <option value="pais" selected>Pais</option>
+        </select>
+
+    </fieldset>
+</form>
+
+
+<form >
+    <fieldset>
+        <legend>¿COMO QUIERES INCIAR SESIÓN?</legend><br>
+        <label for="usuario">Nombre de usuario</label> <br>
+        <input type="email" id="usuario" name="usuario"/><br><br>
+        <label for="contraseña">Contraseña</label> <br>
+        <input type="password" id="contraseña" name="contraseña"/> <br> <br>
+        <label for="confirmacion">Vuelve a escribir la contraseña</label> <br>
+        <input type="password" id="confirmacion" name="confirmacion"/> <br> <br>
+    </fieldset>
+</form>
+
+
+<form >
+    <fieldset>
+        <legend>CONDICIONES DE REGISTRO</legend><br>
+        <label>Deseo recibir ofertas de iDESWEB</label><br>
+        <input type="radio" id="dia" name="deseo" value="dia"/>
+        <label for="dia">Una vez al dia</label>
+        <input type="radio" id="semana" name="deseo" value="semana"/>
+        <label for="semana">Una vez a la semana</label>
+        <input type="radio" id="mes" name="deseo" value="mes"/>
+        <label for="mes">Una vez al mes</label><br> <br>
+        <input type="checkbox" name="acepto" id="acepto" value="acepto">
+        <label for="acepto">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label>
+    </fieldset>
+</form>
+
+
+
+</body>
+</html>
